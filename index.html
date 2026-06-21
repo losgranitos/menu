@@ -1,165 +1,110 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-  
-  <meta content="text/html; charset=utf-8" http-equiv="content-type">
-  <title>Esquites Los Granitos &#8212; Menu</title>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Granitos - Menú</title>
+</head>
+<body style="margin: 0; padding: 0; background-color: #f4ebd9; font-family: sans-serif;">
 
-  
-  
-  <style type="text/css">
-        body {
-            background-color: #f4ebd9;
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 100%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 15px;
-            box-sizing: border-box;
-        }
-        .card {
-            background-color: #ffffff;
-            border-radius: 12px;
-            overflow: hidden;
-            margin-bottom: 35px;
-            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.06);
-            padding: 15px;
-        }
-        .card img {
-            width: 100%;
-            height: auto;
-            max-height: 450px;
-            object-fit: cover;
-            border-radius: 8px;
-            display: block;
-            margin-bottom: 12px;
-        }
-        .card h3 {
-            color: #4A2E2B;
-            font-size: 1.3rem;
-            margin: 10px 0 5px 0;
-            font-weight: bold;
-        }
-        .card p {
-            color: #655;
-            font-size: 0.95rem;
-            line-height: 1.4;
-            margin: 0 0 12px 0;
-        }
-        .price-tag {
-            background-color: #76885B;
-            color: #ffffff;
-            font-weight: bold;
-            padding: 6px 14px;
-            border-radius: 20px;
-            display: inline-block;
-            font-size: 0.95rem;
-        }
-    </style>
-</head><body>
-<div style="background-color: #d32f2f; font-family: sans-serif; position: sticky; top: 0; z-index: 99999; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
-  
-  <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;">
+  <div style="background-color: #556B2F; font-family: sans-serif; position: sticky; top: 0; z-index: 99999; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
     
-    <div style="display: flex; align-items: center; gap: 12px;">
-      <img src="logo.jpeg" alt="Logo" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid white;">
-      <span style="color: white; font-weight: bold; font-size: 22px; letter-spacing: 1px;">LOS GRANITOS</span>
+    <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;">
+      
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <img src="logo.jpeg" alt="Logo" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid white;">
+        <span style="color: white; font-weight: bold; font-size: 22px; letter-spacing: 1px;">LOS GRANITOS</span>
+      </div>
+
+      <button onclick="toggleMenu()" style="background: none; border: 1px solid rgba(255,255,255,0.5); border-radius: 5px; cursor: pointer; padding: 6px 10px; display: flex; flex-direction: column; gap: 5px;">
+        <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
+        <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
+        <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
+      </button>
     </div>
 
-    <button onclick="toggleMenu()" style="background: none; border: 1px solid rgba(255,255,255,0.5); border-radius: 5px; cursor: pointer; padding: 6px 10px; display: flex; flex-direction: column; gap: 5px;">
-      <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
-      <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
-      <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
-    </button>
+    <div id="menuOpciones" style="display: none; background-color: #415324; flex-direction: column; padding-bottom: 10px;">
+      <a href="#" style="color: #ffeb3b; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Inicio</a>
+      <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Tienda</a>
+      <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Carrito</a>
+      <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px;">Pagar</a>
+    </div>
   </div>
 
-  <div id="menuOpciones" style="display: none; background-color: #be2525; flex-direction: column; padding-bottom: 10px;">
-    <a href="#" style="color: #ffeb3b; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Inicio</a>
-    <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Tienda</a>
-    <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Carrito</a>
-    <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px;">Pagar</a>
-  </div>
-</div>
+  <div style="max-width: 500px; margin: 0 auto; padding: 20px; text-align: center;">
+    
+    <p style="font-style: italic; color: #556B2F; margin-bottom: 20px;">"Calidez, textura y el punto exacto de ternura. Un placer que combina con tu historia favorita del día." ✨</p>
+    
+    <div style="background-color: #556B2F; color: white; padding: 10px; font-weight: bold; border-radius: 5px; margin-bottom: 20px; letter-spacing: 1px;">
+      🌽 CRAVINGS OF THE DAY 🌽
+    </div>
 
-<script>
-  function toggleMenu() {
-    var menu = document.getElementById("menuOpciones");
-    if (menu.style.display === "none" || menu.style.display === "") {
-      menu.style.display = "flex";
-    } else {
-      menu.style.display = "none";
+    <p style="font-size: 13px; color: #666; margin-top: -10px; margin-bottom: 20px;">✨ ¡Toca cualquier imagen para pedir tus esquites por WhatsApp! ✨</p>
+
+    <div style="background: white; border-radius: 15px; padding: 15px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.05); text-align: left;">
+      <a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20The%20OG%20Classics%20🌽" target="_blank" style="text-decoration: none; display: block;">
+        <img src="esquites 2.jpeg" alt="The OG Classics" style="width: 100%; border-radius: 10px; display: block; margin-bottom: 10px;">
+      </a>
+      <h3 style="margin: 5px 0; color: #333;">👏 The OG Classics</h3>
+      <p style="margin: 5px 0; color: #666; font-size: 14px;">La esencia pura de nuestra tierra en cada detalle.</p>
+      <span style="background-color: #556B2F; color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 14px; display: inline-block; margin-top: 5px;">$35.00</span>
+    </div>
+
+    <div style="background: white; border-radius: 15px; padding: 15px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.05); text-align: left;">
+      <a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20Crunchy%20Fuego%20🔥" target="_blank" style="text-decoration: none; display: block;">
+        <img src="takis.jpeg" alt="Crunchy Fuego" style="width: 100%; border-radius: 10px; display: block; margin-bottom: 10px;">
+      </a>
+      <h3 style="margin: 5px 0; color: #333;">🔥 Crunchy Fuego</h3>
+      <p style="margin: 5px 0; color: #666; font-size: 14px;">Un viaje crujiente para los amantes del picante.</p>
+      <span style="background-color: #556B2F; color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 14px; display: inline-block; margin-top: 5px;">$45.00</span>
+    </div>
+
+    <div style="background: white; border-radius: 15px; padding: 15px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.05); text-align: left;">
+      <a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20Golden%20Crunch%20🧀" target="_blank" style="text-decoration: none; display: block;">
+        <img src="doritos.jpeg" alt="Golden Crunch" style="width: 100%; border-radius: 10px; display: block; margin-bottom: 10px;">
+      </a>
+      <h3 style="margin: 5px 0; color: #333;">🧀 Golden Crunch</h3>
+      <p style="margin: 5px 0; color: #666; font-size: 14px;">La reinvención del clásico sabor a queso nacho.</p>
+      <span style="background-color: #556B2F; color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 14px; display: inline-block; margin-top: 5px;">$45.00</span>
+    </div>
+
+    <div style="background: white; border-radius: 15px; padding: 15px; margin-bottom: 20px; box-shadow: 0px 4px 8px rgba(0,0,0,0.05); text-align: left;">
+      <a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20The%20Tostito%20Blend%20🥑" target="_blank" style="text-decoration: none; display: block;">
+        <img src="tostitos.jpeg" alt="The Tostito Blend" style="width: 100%; border-radius: 10px; display: block; margin-bottom: 10px;">
+      </a>
+      <h3 style="margin: 5px 0; color: #333;">🥑 The Tostito Blend</h3>
+      <p style="margin: 5px 0; color: #666; font-size: 14px;">La icónica mezcla de maíz preparado y totopos.</p>
+      <span style="background-color: #556B2F; color: white; padding: 5px 10px; border-radius: 15px; font-weight: bold; font-size: 14px; display: inline-block; margin-top: 5px;">$45.00</span>
+    </div>
+
+    <div style="background: white; border-radius: 15px; padding: 15px; margin-bottom: 30px; box-shadow: 0px 4px 8px rgba(0,0,0,0.05); text-align: left;">
+      <h3 style="margin: 5px 0; color: #333;">✨ Test Your Luck 🎲</h3>
+      <p style="margin: 5px 0; color: #666; font-size: 14px;">¿Qué tan suertudo te sientes hoy? Ven a mostrarlo al hacer tu pedido, participa en nuestra dinámica sorpresa del día y desbloquea descuentos especiales para tus esquites. 🌽🎁</p>
+    </div>
+
+    <div style="background-color: #556B2F; color: white; border-radius: 15px; padding: 20px; text-align: left; box-shadow: 0px 4px 8px rgba(0,0,0,0.1);">
+      <h3 style="text-align: center; margin-top: 0;">👋 CONTÁCTANOS 👋</h3>
+      <p style="margin: 10px 0; font-size: 15px;">📞 <b>Celular:</b> (55) 711-101-3081</p>
+      <p style="margin: 10px 0; font-size: 15px;">📍 <b>Dirección:</b> Av. 16 de Septiembre, Manzana 026, San Pedro Atzompa, C.P. 55638, Zumpango, Estado de México</p>
+      <p style="margin: 10px 0; font-size: 15px;">🕒 <b>Horario de Atención:</b> Lunes a Viernes de 8:00 am a 10:20 pm</p>
+      
+      <div style="text-align: center; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); padding-top: 15px;">
+        <span style="font-weight: bold; letter-spacing: 1px;">📱 SÍGUENOS: @losgrani_tos</span>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleMenu() {
+      var menu = document.getElementById("menuOpciones");
+      if (menu.style.display === "none" || menu.style.display === "") {
+        menu.style.display = "flex";
+      } else {
+        menu.style.display = "none";
+      }
     }
-  }
-</script>
+  </script>
 
-  </div>
-</nav>
-  </div>
-</nav>
-<div class="container">
-<div style="padding: 15px 0pt 5px; text-align: center;"> <img src="logo.jpeg" alt="Los Granitos" style="margin: 0pt auto 20px; width: 130px; height: 130px; background-color: rgb(255, 255, 255); display: block;">
-<p style="padding: 0pt 15px; color: rgb(74, 62, 43); line-height: 1.6; margin-bottom: 25px; font-style: italic;">"Calidez,
-textura y el punto exacto de ternura. Un placer que compite
-con tu historia favorita del dia" &#10024; </p>
-<div style="padding: 12px; background-color: rgb(118, 136, 91); color: rgb(255, 255, 255); font-weight: bold; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 25px;">
-&#128248; CRAVINGS OF THE DAY &#128248; </div>
-</div>
-<a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20The%20OG%20Classics%20🌽" target="_blank" style="text-decoration: none; display: block;">
-  <img src="esquites 2.jpeg" alt="The OG Classics" style="width: 100%; border-radius: 10px; cursor: pointer;">
-</a>
-<h3>&#127819; The OG Classics</h3>
-<p>La esencia pura de nuestra tierra en cada detalle.</p>
-<span class="price-tag">&#128176; $35.00</span> </div>
-<a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20Crunchy%20Fuego%20🔥" target="_blank" style="text-decoration: none; display: block;">
-  <img src="takis.jpeg" alt="Crunchy Fuego" style="width: 100%; border-radius: 10px; cursor: pointer;">
-</a>
-<h3>&#128293; Crunchy Fuego</h3>
-<p>Un viaje crujiente para los amantes del picante.</p>
-<span class="price-tag">&#128176; $45.00</span> </div>
-<div class="card"> <img src="doritos.jpeg" alt="Golden Crunch">
-<h3>&#129472; Golden Crunch</h3>
-<p>La reinvencion del clasico sabor a queso nacho.</p>
-<span class="price-tag">&#128176; $45.00</span> </div>
-<a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20Golden%20Crunch%20🧀" target="_blank" style="text-decoration: none; display: block;">
-  <img src="doritos.jpeg" alt="Golden Crunch" style="width: 100%; border-radius: 10px; cursor: pointer;">
-</a>
-<h3>&#129361; The Tostito Blend</h3>
-  <a href="https://wa.me/525571103081?text=¡Hola!%20Quiero%20hacer%20un%20pedido%20de%20los%20esquites%20The%20Tostito%20Blend%20🥑" target="_blank" style="text-decoration: none; display: block;">
-  <img src="tostitos.jpeg" alt="The Tostito Blend" style="width: 100%; border-radius: 10px; cursor: pointer;">
-</a>
-<p>La iconica mezcla de maiz preparado y totopos.</p>
-<span class="price-tag">&#128176; $45.00</span> </div>
-<div class="card">
-<h3>&#10024; Test Your Luck &#127922;</h3>
-<p>Que tan suertudo te sientes hoy? Ven a mostrarlo al hacer tu pedido,
-participa en nuestra dinamica sorpresa del dia y desbloquea descuentos
-especiales para tus esquites. &#127805;&#127873;</p>
-</div>
-<div style="padding: 30px 20px; background-color: rgb(118, 136, 91); color: rgb(255, 255, 255); margin-top: 45px; margin-bottom: 20px; text-align: center;">
-<h2 style="text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 15px; font-weight: bold; color: rgb(255, 255, 255);">&#128075;
-CONTACTANOS &#128075; </h2>
-  <div style="text-align: center; margin-top: 15px;">
-  <a href="https://wa.me/525571103081?text=Hola!%20Quiero%20hacer%20un%20pedido%20de%20esquites" 
-     target="_blank" 
-     style="background-color: #25D366; color: white; padding: 12px 20px; text-decoration: none; font-weight: bold; border-radius: 25px; display: inline-block; font-family: sans-serif; box-shadow: 0px 4px 6px rgba(0,0,0,0.1);">
-     💬 ¡Pide por WhatsApp aquí!
- <a href="https://www.instagram.com/losgrani_tos" target="_blank" style="position: fixed; bottom: 20px; right: 20px; background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; box-shadow: 0px 4px 10px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none;">
-  <svg viewBox="0 0 24 24" fill="currentColor" style="width: 32px; height: 32px;">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.
-</div>
-<div style="margin: 0pt auto 30px; text-align: left; max-width: 450px; line-height: 1.8;">
-<p style="margin: 10px 0pt; color: rgb(255, 255, 255);"><strong>&#128222;
-<p style="margin: 10px 0pt; color: rgb(255, 255, 255);"><strong>&#128205;
-Direccion:</strong> Av. 16 de Septiembre, Manzana 026, San Pedro
-Zitlaltepec, C.P. 55628, Zumpango, Estado de Mexico</p>
-<p style="margin: 10px 0pt; color: rgb(255, 255, 255);"><strong>&#9200;
-Horario de Atencion:</strong> Lunes a Viernes de 8:00 am a 10:20 pm</p>
-</div>
-<hr style="border: 0pt none ; margin: 25px 0pt;">
-<h3 style="font-weight: bold; margin-bottom: 8px; color: rgb(244, 235, 217);">&#128241;
-
-
-</body></html>
+</body>
+</html>
