@@ -60,18 +60,40 @@
         }
     </style>
 </head><body>
- <nav style="background-color: #d32f2f; padding: 15px; position: sticky; top: 0; z-index: 2000; font-family: sans-serif;">
-  <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+<div style="background-color: #d32f2f; font-family: sans-serif; position: sticky; top: 0; z-index: 99999; box-shadow: 0px 4px 10px rgba(0,0,0,0.2);">
+  
+  <div style="display: flex; justify-content: space-between; align-items: center; padding: 12px 20px;">
     
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <img src="logo.jpeg" alt="Logo" style="width: 40px; height: 40px; border-radius: 50%;">
-      <span style="color: white; font-weight: bold; font-size: 20px;">LOS GRANITOS</span>
+    <div style="display: flex; align-items: center; gap: 12px;">
+      <img src="logo.jpeg" alt="Logo" style="width: 45px; height: 45px; border-radius: 50%; object-fit: cover; border: 2px solid white;">
+      <span style="color: white; font-weight: bold; font-size: 22px; letter-spacing: 1px;">LOS GRANITOS</span>
     </div>
 
-    <div style="display: flex; gap: 20px;">
-      <a href="#" style="color: #ffeb3b; text-decoration: none; font-weight: bold;">Inicio</a>
-      <a href="https://www.instagram.com/losgrani_tos" target="_blank" style="color: white; text-decoration: none; font-weight: bold;">Instagram</a>
-    </div>
+    <button onclick="toggleMenu()" style="background: none; border: 1px solid rgba(255,255,255,0.5); border-radius: 5px; cursor: pointer; padding: 6px 10px; display: flex; flex-direction: column; gap: 5px;">
+      <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
+      <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
+      <span style="background-color: white; width: 22px; height: 2px; display: block;"></span>
+    </button>
+  </div>
+
+  <div id="menuOpciones" style="display: none; background-color: #be2525; flex-direction: column; padding-bottom: 10px;">
+    <a href="#" style="color: #ffeb3b; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Inicio</a>
+    <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Tienda</a>
+    <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px; border-bottom: 1px solid rgba(255,255,255,0.1);">Carrito</a>
+    <a href="#" style="color: white; padding: 12px 25px; text-decoration: none; font-weight: bold; font-size: 16px;">Pagar</a>
+  </div>
+</div>
+
+<script>
+  function toggleMenu() {
+    var menu = document.getElementById("menuOpciones");
+    if (menu.style.display === "none" || menu.style.display === "") {
+      menu.style.display = "flex";
+    } else {
+      menu.style.display = "none";
+    }
+  }
+</script>
 
   </div>
 </nav>
